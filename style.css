@@ -51,7 +51,7 @@ body {
   gap: 30px;
 }
 
-.menu{
+.menu {
   display: none;
 }
 
@@ -478,42 +478,40 @@ h4 {
 }
 
 @media (max-width: 600px) {
+  .nav {
+    height: 100px;
+    width: 100vw;
+    padding: 0 5vw;
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
 
-  
-.nav {
-  height: 100px;
-  width: 100vw;
-  padding: 0 5vw;
-  z-index: 99;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-  color: #fff;
-}
+  .nav-gym {
+    width: 4vmax;
+    margin-right: 15px;
+  }
 
-.nav-gym {
-  width: 4vmax;
-  margin-right: 15px;
-}
+  .gymnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+  }
 
-.gymnav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 24px;
-}
+  .nav-right {
+    display: none;
+  }
 
-.nav-right {
-  display: none;
-}
+  .menu {
+    display: block;
+    font-size: 4vmax;
+  }
 
-.menu{
-  display: block;
-  font-size: 4vmax;
-}
-  
   #page1 > .content > .left {
     width: 100%;
     background-image: url(images/shutterstock_567789283.png);
@@ -686,96 +684,108 @@ h4 {
     gap: 12px;
   }
 
-    
-#page5 {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  padding-top: 80px;
-  display: flex;
-  flex-direction: column;
+  #page5 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #page5 > .upper {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #page5 > .upper > .right {
+    height: 25%;
+    width: 100vw;
+    background-color: #f1f1f1;
+    padding: 30px 20px;
+  }
+
+  #page5 > .upper > .right > h1 {
+    font-size: 4vmax;
+  }
+
+  .line2 {
+    margin-top: 10px;
+    width: 120px;
+    height: 7px;
+    background-color: #343434;
+  }
+
+  #page5 > .upper > .left {
+    height: 75%;
+    width: 100vw;
+    background-color: #00daab;
+    padding: 40px 30px;
+  }
+
+  .review-items {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+  }
+
+  .item {
+    height: 100%;
+    width: 400px;
+    background-color: #00d3a5;
+    padding: 27px;
+    color: #fff;
+  }
+
+  .item > h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .item > h4 {
+    font-size: 14px;
+  }
+
+  .stars {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .arrows {
+    padding: 30px 0;
+    height: 30%;
+    width: 100%;
+  }
+
+  .arrows > i {
+    color: #fff;
+    font-size: 50px;
+  }
+
+  #page5 > .lower {
+    height: 20%;
+    background-color: #595959;
+  }
 }
 
-#page5 > .upper {
-  height: 80%;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+::-webkit-scrollbar-track {
+  background-color: none;
 }
 
-#page5 > .upper > .right {
-  height: 25%;
-  width: 100vw;
-  background-color: #f1f1f1;
-  padding: 30px 20px;
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: none;
 }
 
-#page5 > .upper > .right > h1{
-  font-size: 4vmax;
-}
-
-.line2 {
-  margin-top: 10px;
-  width: 120px;
-  height: 7px;
-  background-color: #343434;
-}
-
-#page5 > .upper > .left {
-  height: 75%;
-  width: 100vw;
-  background-color: #00daab;
-  padding: 40px 30px;
-}
-
-.review-items {
-  height: 70%;
-  width: 100%;
-  display: flex;
-  gap: 30px;
-}
-
-.item {
-  height: 100%;
-  width: 400px;
+::-webkit-scrollbar-thumb {
   background-color: #00d3a5;
-  padding: 27px;
-  color: #fff;
-}
-
-.item > h3 {
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: 200;
-}
-
-.item > h4 {
-  font-size: 14px;
-}
-
-.stars {
-  color: #fff;
-  margin-bottom: 20px;
-  font-size: 20px;
-  letter-spacing: 5px;
-}
-
-.arrows {
-  padding: 30px 0;
-  height: 30%;
-  width: 100%;
-}
-
-.arrows > i {
-  color: #fff;
-  font-size: 50px;
-}
-
-#page5 > .lower {
-  height: 20%;
-  background-color: #595959;
-}
-
+  border-radius: 10px;
 }
